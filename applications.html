@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .app-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+            text-align: center;
+            transition: box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .app-card:hover {
+            box-shadow: 0 4px 16px rgba(0,120,215,0.15);
+        }
+        .app-card h2 {
+            margin: 0 0 0.5rem 0;
+            color: #0078d7;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Applications</h1>
+        <div class="app-grid">
+            <div class="app-card" onclick="location.href='app1.html'">
+                <h2>Grovia</h2>
+                <p>Smart grocery management for individuals and families.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
