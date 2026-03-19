@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A static website built with HTML, CSS, and JavaScript." />
+    <title>My Static Website</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="header__logo">MySite</a>
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#about" class="header__nav-link">About</a></li>
+          <li class="header__nav-item"><a href="#features" class="header__nav-link">Features</a></li>
+          <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Welcome to My Website</h1>
+          <p class="hero__subtitle">A clean, fast, and modern static website.</p>
+          <a href="#about" class="btn btn--primary">Learn More</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section section--about">
+        <div class="section__container">
+          <h2 class="section__title">About</h2>
+          <p class="section__text">
+            This is a simple static website built with semantic HTML5, BEM-styled CSS, and modular JavaScript.
+            It serves as a clean starting point for any web project.
+          </p>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="section section--features">
+        <div class="section__container">
+          <h2 class="section__title">Features</h2>
+          <ul class="features__list">
+            <li class="features__item">⚡ Fast &amp; Lightweight</li>
+            <li class="features__item">📱 Responsive Design</li>
+            <li class="features__item">♿ Accessible Markup</li>
+            <li class="features__item">🎨 BEM CSS Architecture</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section section--contact">
+        <div class="section__container">
+          <h2 class="section__title">Contact</h2>
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__group">
+              <label class="form__label" for="name">Name</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__input form__input--textarea" id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Send Message</button>
+            <p class="form__status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">&copy; <span id="year"></span> MySite. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
